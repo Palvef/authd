@@ -12,7 +12,6 @@ Restart=on-failure
 RestartSec=5s
 LimitNOFILE=65536
 RuntimeDirectory=auth-gateway
-RuntimeDirectoryGroup=nginx
 RuntimeDirectoryMode=0770
 UMask=0007
 
