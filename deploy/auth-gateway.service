@@ -5,14 +5,14 @@ After=network.target
 [Service]
 Type=simple
 User=www-data
-Group=www-data
+Group=nginx
 WorkingDirectory=/opt/authd
 ExecStart=/opt/authd/authd -config /opt/authd/config.json
 Restart=on-failure
 RestartSec=5s
 LimitNOFILE=65536
 RuntimeDirectory=auth-gateway
-RuntimeDirectoryGroup=www-data
+RuntimeDirectoryGroup=nginx
 RuntimeDirectoryMode=0770
 UMask=0007
 
